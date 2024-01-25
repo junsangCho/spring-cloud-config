@@ -1,0 +1,16 @@
+info:
+  component: Config Server
+
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/junsangCho/config-repo
+          search-paths: toy/**
+          default-label: main
+
+server:
+  port: 8887

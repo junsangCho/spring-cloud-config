@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: configClient
+  profiles:
+    active: prod
+  config:
+    import: optional:configserver:http://localhost:8887
+
+server:
+  port: 8080
+
+ii: d
