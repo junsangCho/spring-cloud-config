@@ -6,7 +6,7 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import springcloud.configclient.config.MyConfig;
 
 @SpringBootApplication
-@EnableConfigurationProperties(MyConfig.class)
+//@EnableConfigurationProperties(MyConfig.class)
 public class ConfigClientApplication {
 
     public static void main(String[] args) {

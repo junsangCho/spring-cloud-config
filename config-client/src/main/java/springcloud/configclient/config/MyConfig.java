@@ -5,12 +5,14 @@ import lombok.Setter;
 import lombok.ToString;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
+import org.springframework.context.annotation.Configuration;
 
 @Setter
 @Getter
-@ConfigurationProperties("toy.config.info")
-@RefreshScope
 @ToString
+@RefreshScope
+@ConfigurationProperties("toy.config.info")
+@Configuration
 public class MyConfig {
 
     private String profile;
