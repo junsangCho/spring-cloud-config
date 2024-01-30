@@ -1,6 +1,9 @@
 info:
   component: Config Server
 
+server:
+  port: 8887
+
 spring:
   application:
     name: configserver
@@ -8,9 +11,49 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/junsangCho/config-repo
+          uri: git@github.com:junsangCho/config-repo.git
+          ignore-local-ssh-settings: true
           search-paths: toy/**
           default-label: main
+          private-key: |
+            -----BEGIN OPENSSH PRIVATE KEY-----
+            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
+            -----END OPENSSH PRIVATE KEY-----
 
-server:
-  port: 8887
+
+
